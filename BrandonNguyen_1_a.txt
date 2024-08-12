@@ -19,9 +19,10 @@ Logical Steps:
 8. Continue the loop until all tickets are sold out.
 
 Variables:
-total_tickets: An integer initialized to 20, representing the total number of tickets available.
-total_buyers: An integer initialized to 0, representing the total number of buyers who have  purchased tickets.
-tickets_requested: An integer representing the number of tickets the user requests to buy.
+total_tickets: An integer representing the total number of tickets available.
+total_buyers: An integer representing the total number of buyers who have  purchased tickets.
+`user_input`: A string representing input from the user.
+`tickets_bought`: An integer representing the number of tickets the user has bought.
 
 Functions:
 sell_tickets()
