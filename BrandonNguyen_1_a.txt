@@ -1,0 +1,29 @@
+Name: Brandon Nguyen
+Date Created: 08/14/24
+Assignment: Exercise 1A
+
+Program Description:
+This program simulates a ticket-selling process where a limited number of tickets are available for purchase.
+The user can request to buy a certain number of tickets (between 1 and 4) until all tickets are sold out.
+The program keeps track of the remaining tickets and the total number of buyers.
+
+Logical Steps:
+1. Prompt the user to enter the number of tickets they wish to buy (between 1 and 4).
+2. Validate the number of tickets requested by the user.
+3. Check if there are enough tickets left to fulfill the user's request.
+4. If the request is valid and can be fulfilled:
+   Deduct the requested tickets from the total tickets available.
+5. Increment the total number of buyers.
+6. Display the remaining tickets.
+7. If the request is invalid or exceeds the remaining tickets, display an error message.
+8. Continue the loop until all tickets are sold out.
+
+Variables:
+total_tickets: An integer initialized to 20, representing the total number of tickets available.
+total_buyers: An integer initialized to 0, representing the total number of buyers who have successfully purchased tickets.
+tickets_requested: An integer representing the number of tickets the user requests to buy.
+
+Functions:
+sell_tickets()
+
+Link to git repository: https://github.com/BKhuong1515/COP2373.git
