@@ -33,7 +33,7 @@ def sell_tickets():
                 total_buyers += 1
                 print(f"Tickets successfully purchased! Remaining tickets: {total_tickets}")
             else:
-                print(f"Sorry, only {total_tickets} tickets remaining.")
+                print(f"Error! Only {total_tickets} tickets remaining.")
         else:
             print("You can only buy between 1 and 4 tickets.")
 
