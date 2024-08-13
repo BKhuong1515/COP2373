@@ -1,9 +1,5 @@
-# Ticket Sales Program
-# Name: Brandon Nguyen
-# Assignment: 1A
-# A application where 20 tickets are available for purchase.
+# An application that tracks the amount of buyers for a total of 20 tickets available for purchase.
 # The user can request to buy a certain number of tickets between 1 and 4 until all tickets are sold out.
-# Also, keeps track of the remaining tickets and the total number of buyers.
 
 def sell_tickets():
     total_tickets = 20
