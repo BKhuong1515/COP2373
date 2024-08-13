@@ -11,8 +11,7 @@ Logical Steps:
 1. Prompt the user to enter the number of tickets they wish to buy (between 1 and 4).
 2. Validate the number of tickets requested by the user.
 3. Check if there are enough tickets left to fulfill the user's request.
-4. If the request is valid and can be fulfilled,
-   deduct the requested tickets from the total tickets available.
+4. If the request is valid, then deduct the requested tickets from the total tickets available.
 5. Increment the total number of buyers.
 6. Display the remaining tickets.
 7. If the request is invalid or exceeds the remaining tickets, display an error message.
@@ -20,11 +19,11 @@ Logical Steps:
 
 Variables:
 total_tickets: An integer representing the total number of tickets available.
-total_buyers: An integer representing the total number of buyers who have  purchased tickets.
-`user_input`: A string representing input from the user.
-`tickets_bought`: An integer representing the number of tickets the user has bought.
+total_buyers: An integer representing the total number of buyers who have purchased tickets.
+user_input: A string representing input from the user.
+tickets_bought: An integer representing the number of tickets the user has bought.
 
 Functions:
-sell_tickets()
+ticket_tracker()
 
 Link to git repository: https://github.com/BKhuong1515/COP2373.git
