@@ -3,9 +3,8 @@ Date Created: 08/12/24
 Assignment: Exercise 1A
 
 Program Description:
-A application where 20 tickets are available for purchase.
+An application that tracks the amount of buyers for a total of 20 tickets available for purchase.
 The user can request to buy a certain number of tickets between 1 and 4 until all tickets are sold out.
-Also, keeps track of the remaining tickets and the total number of buyers.
 
 Logical Steps:
 1. Prompt the user to enter the number of tickets they wish to buy (between 1 and 4).
