@@ -1,0 +1,28 @@
+Name: Brandon Nguyen
+Date Created: 09/05/24
+Assignment: Exercise 2A
+
+Program Description:
+Program scans an email message for spam keywords, assigns a score, and rates the likelihood of the message being spam.
+
+Logical Steps:
+1. Define a list of common spam keywords and phrases.
+2. Convert the email message to lowercase to check comparison.
+3. Check the message for occurrences of spam words/phrases.
+4. For each occurrence of a spam keyword, add 1 to the spam score and add the keyword to a list of flagged words.
+5. Rate the likelihood of the message being spam based.
+6. Display the spam score, likelihood of spam, and the flagged keywords to the user.
+
+Variables:
+SPAM_KEYWORDS: A list containing common spam trigger words and phrases.
+message_lower: The user’s message converted to lowercase for word matching.
+spam_score: An integer representing the number of spam keywords found in the email message.
+flagged_words: A list that stores the spam keywords found in the user's email message.
+message: A string representing the input email message from the user.
+
+Functions:
+calculate_score(message): Scans the email message for spam keywords and returns the spam score and flagged words.
+rating(score): Returns the likelihood of the message being spam based on the score.
+main(): Handles the user input and displays the results.
+
+Link to git repository: https://github.com/BKhuong1515/COP2373.git
