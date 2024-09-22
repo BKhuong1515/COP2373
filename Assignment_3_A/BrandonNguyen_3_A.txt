@@ -1,0 +1,27 @@
+Name: Brandon Nguyen
+Date Created: 09/19/24
+Assignment: Exercise 3A
+Program Description:
+This program allows the user to input different expenses and then calculates
+the total expense, as well as finding the highest and lowest expense amounts.
+
+Logical Steps:
+1. Ask the user to input the type of expense and the amount.
+2. Calculate the total expense.
+3. Identify the highest expense.
+4. Identify the lowest expense.
+5. Display the total, highest, and lowest expenses to the user.
+
+Variables:
+expenses: A list that stores the expense type and its corresponding amount.
+expense_type: A string representing the type of expense.
+amount: A float representing the monetary value of each expense.
+total_expense: The total of all the expenses.
+highest_expense: The expense with the highest value.
+lowest_expense: The expense with the lowest value.
+
+Functions:
+expense_highest(expenses): A list of expenses and returns the highest amount.
+expense_lowest(expenses): A list of expenses and returns the lowest amount.
+expense_total(expenses): Takes a list of expenses and uses reduce to sum up all expense amounts.
+main(): Handles user input, stores expenses in a list, and displays the results
