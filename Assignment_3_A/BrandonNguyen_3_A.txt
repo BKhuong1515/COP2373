@@ -25,3 +25,5 @@ expense_highest(expenses): A list of expenses and returns the highest amount.
 expense_lowest(expenses): A list of expenses and returns the lowest amount.
 expense_total(expenses): Takes a list of expenses and uses reduce to sum up all expense amounts.
 main(): Handles user input, stores expenses in a list, and displays the results
+
+Link to git repository: https://github.com/BKhuong1515/COP2373.git
