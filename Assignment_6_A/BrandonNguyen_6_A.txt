@@ -1,0 +1,32 @@
+Name: Brandon Nguyen
+Date Created: 10/03/24
+Assignment: Exercise 6A
+
+Program Description:
+This program allows the user to input a phone number, social security number (SSN), and zip code.
+It then validates each input using regular expressions to determine if the values match the formats for each type.
+
+
+Logical Steps:
+1. Ask the user to input a phone number, SSN, and zip code.
+2. Validate the phone number using a regular expression.
+3. Validate the SSN using a regular expression.
+4. Validate the zip code using a regular expression.
+5. Display to the user whether the phone number, SSN, and zip code are valid or invalid.
+
+Variables:
+phone_number: A string representing the user’s phone number.
+ssn: A string representing the user’s social security number.
+zip_code: A string representing the user’s zip code.
+GET_DATA_FORMAT: A dictionary containing regular expression patterns for validating each input type.
+
+
+Functions:
+validate_format(input_value, pattern, input_type):
+Validates the input using the provided regular expression pattern and displays whether it’s valid or not.
+
+main():
+Collects user input for phone number, SSN, and zip code,
+and validates them using validate_format with the corresponding regular expression.
+
+Link to git repository: https://github.com/BKhuong1515/COP2373.git
