@@ -1,0 +1,27 @@
+Name: Brandon Nguyen
+Date Created: 10/14/24
+Assignment: Exercise 6A
+
+Program Description:
+This program allows the user to input multiple sentences,
+then numbers and displays each sentence entered by the user.
+
+Logical Steps:
+1. Prompt the user to input sentences, with instructions to type '1' when they are done.
+2. Use a loop to gather all the input sentences.
+3. Extract complete sentences using a regular expression.
+4. Display each sentence, numbered sequentially.
+
+Variables:
+input_text: A string that stores the user’s input sentences.
+sentences: A list that holds the sentences from the user input.
+end_input: A temporary string variable that stores multiple inputs until the user enters '1'.
+
+Functions:
+get_sentences(text):
+Takes the user's input text and uses a regular expression to find and return the sentences.
+
+main():
+Manages user input, calls the function to extract sentences, and displays the results in a numbered format.
+
+Link to git repository: https://github.com/BKhuong1515/COP2373.git
