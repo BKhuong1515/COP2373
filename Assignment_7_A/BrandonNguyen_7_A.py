@@ -9,8 +9,8 @@ import re
 
 
 def get_sentences(text):
-    # Pattern to determine complete sentences
-    pat = r'([A-Z0-9][^.!?]*[.!?])'
+    # Pattern to determine sentences
+    pat = r'([A-Z0-9][^.!?]*[.!?]?)'
     sentences = re.findall(pat, text, flags=re.MULTILINE | re.DOTALL)
     return sentences
 
@@ -31,7 +31,7 @@ def main():
 
     print("\nSentences:")
     for i, sentence in enumerate(sentences, 1):
-        print(f"{i}. {sentence.strip()}")
+        print(f"{i}. {sentence}")
 
 
 main()
