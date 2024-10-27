@@ -1,0 +1,77 @@
+Name: Brandon Nguyen
+Date Created: 10/27/24
+Assignment: Exercise 8A
+
+Program Description:
+This program allows an instructor to enter student grades and store them in
+a CSV file, then read the CSV file and display the grades.
+
+Functions Used in the Program
+1. Function Name: write_student_data
+Description: This function collects student data from the user and stores it in grades.csv.
+It writes the student names and three exam grades as rows in the CSV file.
+Parameters: None
+
+Variables:
+    1. num_students (int) – Stores the number of students to be entered, input by the user.
+    2. file (object) – Represents the opened file where data will be written.
+    3. writer (csv.writer) – CSV writer object used to write data to the file.
+    4. first_name (str) – Stores the first name of the student.
+    5. last_name (str) – Stores the last name of the student.
+    6. exam1, exam2, exam3 (int) – Stores the grades for the three exams.
+
+Logical Steps:
+    1. Prompt the user to enter the number of students.
+    2. Open the grades.csv file in write mode.
+    3. Write the header row with column names.
+    4. Loop through the number of students:
+    5. Prompt the user to enter the student’s name and grades.
+    6. Write the entered data as a new row in the CSV file.
+    7. Close the file.
+    8. Display a message confirming that the data was saved successfully.
+
+Returns: None
+
+2. Function Name: read_student_data
+Description: This function reads the student data from grades.csv and displays the information.
+Parameters: None
+
+Variables:
+    1. file (object) – Represents the opened file for reading.
+    2. reader (csv.reader) – CSV reader object used to read the data from the file.
+    3. row (list) – A row of student data read from the CSV file.
+    4. Logical Steps:
+
+Logical Steps:
+    1. Try to open grades.csv in read mode.
+    2. Create a CSV reader object to read the data.
+    3. Display the table header.
+    4. Loop through each row in the CSV:
+    5. Print the row data in a formatted manner.
+    6. If the file does not exist, display an error message.
+
+Returns: None
+
+3. Function Name: main
+Description:This is the main function that provides a menu for the user to interact with the program.
+Parameters: None
+
+Variables:
+    1. choice (str) – Stores the user’s menu selection.
+
+Logical Steps:
+    1. Enter a loop that displays the menu options.
+    2. Prompt the user to select an option.
+    3. If the input is invalid, display an error message.
+
+Returns: None
+
+Logical Steps:
+    1. Call the main() function.
+    2. The menu is displayed, and the user makes a choice.
+    3. If the user selects 1, the write_student_data() function is called to input and store grades.
+    4. If the user selects 2, the read_student_data() function is called to display the stored grades from the csv.
+    5. If the user selects 3, the program exits.
+    6. If the user enters an invalid option, an error message is shown, and the menu is displayed again.
+
+Link to repository: https://github.com/BKhuong1515/COP2373.git
