@@ -1,0 +1,151 @@
+# Name: Brandon Nguyen
+# Date Created: 10/30/24
+# Assignment: Exercise 9A
+
+Program Description:
+This program defines a BankAcct class that updates the interest rate,
+depositing, withdrawing, checking balance,
+and calculating interest over a given number of days.
+
+1. Function Name: __init__
+Description: Initializes the bank account with account holder's name,
+account number, initial balance, and interest rate.
+
+Parameters:
+    - holder_name (str): Name of the account holder.
+    - acct_number (str): Number for the account.
+    - balance (float, optional): Initial balance of the account.
+    - annual_interest (float, optional): Annual interest rate of the account.
+
+Variables:
+    - self.holder_name (str): Stores the account holder's name.
+    - self.acct_number (str): Stores the account number.
+    - self.balance (float): Stores the current balance.
+    - self.annual_interest (float): Stores the annual interest rate.
+
+Logical Steps:
+    1. Assigns the provided values to instance attributes.
+Returns: None
+
+2. Function Name: update_interest_rate
+Description: Updates the interest rate for the account if within a valid range (0-1).
+
+Parameters:
+    - new_interest_rate (float): New interest rate to be applied.
+
+Variables:
+    - self.annual_interest (float): Updated with the new interest rate if valid.
+
+Logical Steps:
+    1. Checks if new_interest_rate is between 0 and 1.
+    2. Updates self.annual_interest if valid; otherwise, prints an error.
+
+Returns: None
+
+3. Function Name: deposit_funds
+Description: Deposits a specified amount into the account if positive.
+
+Parameters:
+    - amount (float): Amount to deposit into the account.
+
+Variables:
+    - self.balance (float): Updated to reflect the deposit.
+
+Logical Steps:
+    1. Checks if amount is positive.
+    2. Adds amount to self.balance; otherwise, prints an error.
+
+Returns: None
+
+4. Function Name: withdraw_funds
+Description: Withdraws the amount from the account if it doesn’t exceed the balance.
+
+Parameters:
+    - amount (float): Amount to withdraw from the account.
+
+Variables:
+    - self.balance (float): Updated to reflect the withdrawal.
+
+Logical Steps:
+    1. Checks if amount is positive and does not exceed self.balance.
+    2. Subtracts amount from self.balance; otherwise, prints an error.
+
+Returns: None
+
+5. Function Name: get_current_balance
+Description: Returns the current balance of the account.
+
+Parameters: None
+
+Variables:
+    - self.balance (float): Represents the current balance.
+
+Logical Steps:
+    1. Returns the value of self.balance.
+
+Returns: float - the current balance of the account.
+
+6. Function Name: calculate_daily_interest
+Description: Calculates interest over a specified number of days based on the daily interest rate.
+
+Parameters:
+    - days (int): Number of days to calculate interest for.
+
+Variables:
+    - daily_interest_rate (float): Daily rate derived from annual interest.
+    - interest_earned (float): Calculated interest for the given period.
+
+Logical Steps:
+    1. Checks if days is positive.
+    2. Calculates daily_interest_rate by dividing self.annual_interest by 365.
+    3. Calculates interest_earned using self.balance, daily_interest_rate, and days.
+    4. Returns the interest_earned amount.
+
+Returns: float - the calculated interest amount.
+
+7. Function Name: __str__
+Description: Returns a formatted string representing the account holder, account number, balance, and interest rate.
+
+Parameters: None
+
+Variables:
+    - self.holder_name, self.acct_number, self.balance, self.annual_interest
+
+Logical Steps:
+    1. Formats and returns a string with account details.
+
+Returns: str - a string with the account details.
+
+8. Function Name: test_bank_acct
+Description: Demonstrates the functionality of the BankAcct class by performing account operations like updating the interest rate, depositing, withdrawing, and calculating interest.
+
+Parameters: None
+
+Variables:
+    - initial_balance (float): Initial balance for the test account.
+    - initial_interest_rate (float): Initial interest rate for the test account.
+    - updated_interest_rate (float): New interest rate to apply.
+    - deposit_amount (float): Amount to deposit into the account.
+    - withdrawal_amount (float): Amount to withdraw from the account.
+    - days (int): Number of days for which interest is calculated.
+    - interest (float): Holds the calculated interest for the period.
+
+Logical Steps:
+    1. Creates a BankAcct instance with initial balance and interest rate.
+    2. Displays account details.
+    3. Updates interest rate and displays updated account details.
+    4. Deposits an amount and displays the balance.
+    5. Withdraws an amount and displays the balance.
+    6. Calculates and displays interest over a specified period.
+
+Returns: None
+
+Logical Steps
+1. The test_bank_acct function initializes a BankAcct object.
+2. It displays account information.
+3. The interest rate is updated, and the details are printed.
+4. A deposit is made, and the balance is displayed.
+5. A withdrawal is made, and the balance is displayed.
+6. Interest is calculated for a set number of days and displayed.
+
+Link to repository: https://github.com/BKhuong1515/COP2373.git
