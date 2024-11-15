@@ -1,0 +1,112 @@
+Technical Design Document
+Name: Brandon Nguyen
+Date Created: 11/11/24
+Assignment: Exercise 11A
+Program Description:
+Simulates a poker game where a user is dealt a hand of five cards.
+The user can replace a selected card by entering their number or press 'S' to stay and keep all cards.
+
+1. Function Name: Deck.__init__
+Description: Initializes a standard deck of 52 cards with suits and ranks.
+
+Parameters: None
+
+Variables:
+    - suits (list): Contains the four card suits ('Hearts', 'Diamonds', 'Clubs', 'Spades').
+    - ranks (list): Contains the thirteen card ranks ('2' through 'A').
+    - cards (list): Combines suits and ranks to form a complete deck of cards.
+
+Logical Steps:
+    1 .Create lists for suits and ranks.
+    2. Combine suits and ranks to create a complete deck of cards.
+    3. Shuffle the deck to randomize the card order.
+
+Returns: None
+
+2. Function Name: Deck.shuffle
+Description: Shuffles the deck of cards to randomize their order.
+
+Parameters: None
+
+Variables: None
+
+Logical Steps:
+    1. Use the random.shuffle method to shuffle the cards in place.
+
+Returns: None
+
+3. Function Name: Deck.deal
+Description: Deals a specified number of cards from the top of the deck.
+
+Parameters: num_cards (int) - Number of cards to deal (default is 5).
+
+Variables:
+    - dealt_cards (list): Contains the cards that are dealt from the top of the deck.
+
+Logical Steps:
+    1. Slice the top 'num_cards' from the deck.
+    2. Remove the dealt cards from the remaining deck.
+
+Returns: A list of dealt cards.
+
+4. Function Name: display_hand
+Description: Displays the hand of cards with a given message.
+
+Parameters:
+    - hand (list): The list of cards to display.
+    - message (str): A message describing the context of the hand (e.g., 'Your starting hand').
+
+Variables: None
+
+Logical Steps:
+    1. Print the provided message.
+    2. Loop through the cards in the hand and print each card with its position.
+
+Returns: None
+
+5. Function Name: replace_cards
+Description: Allows the user to replace selected cards in their hand or choose to keep all cards.
+
+Parameters:
+    - deck (Deck): The deck of cards to draw replacements from.
+    - hand (list): The user's current hand of cards.
+
+Variables:
+    - replace_input (str): The user's input specifying which cards to replace.
+    - get_user_input (list): List of zero-based indices corresponding to the cards the user wants to replace.
+
+Logical Steps:
+    1. Prompt the user to enter card numbers or press 'S' to stay.
+    2. If the user enters 'S', exit the function without replacing cards.
+    3. Parse the user's input and validate the card numbers.
+    4. If the input is valid, reshuffle the deck and deal replacements for the selected cards.
+    5. Replace the specified cards in the user's hand.
+
+Returns: None
+
+19.	6. Function Name: main
+Description: Orchestrates the poker game by initializing the deck, dealing the hand, and managing user interactions.
+
+Parameters: None
+
+Variables:
+    - deck (Deck): The deck of cards used in the game.
+    - hand (list): The user's current hand of cards.
+
+Logical Steps:
+    1. Print a welcome message and shuffle the deck.
+    2. Deal the starting hand and display it to the user.
+    3. Allow the user to replace cards or stay using the replace_cards function.
+    4. Display the final hand after replacement.
+    5. Print a thank-you message to end the game.
+
+Returns: None
+
+Logical Steps:
+1. The main function initializes the deck and deals the starting hand.
+2. The display_hand function shows the starting hand to the user.
+3. The replace_cards function allows the user to replace selected cards or stay.
+4. The final hand is displayed using the display_hand function.
+5. The program ends with a thank-you message.
+
+Link to repository: https://github.com/BKhuong1515/COP2373.git

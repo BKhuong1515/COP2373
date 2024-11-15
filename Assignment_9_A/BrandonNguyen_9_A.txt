@@ -142,7 +142,7 @@ Returns: None
 
 Logical Steps
 1. The test_bank_acct function initializes a BankAcct object.
-2. It displays account information.
+2. Then displays account information.
 3. The interest rate is updated, and the details are printed.
 4. A deposit is made, and the balance is displayed.
 5. A withdrawal is made, and the balance is displayed.
