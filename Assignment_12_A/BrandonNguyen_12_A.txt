@@ -1,0 +1,79 @@
+Technical Design Document
+Name: Brandon Nguyen
+Date Created: 11/17/24
+
+Program Description:
+Loads student grades from a CSV file, then calculates and
+displays the mean, median, standard deviation, minimum, and maximum for each exam and overall grades.
+Also determines pass/fail statistics and calculates the overall pass percentage.
+
+
+1. Function Name: load_data
+Description: This function loads grades data from a CSV file into a NumPy array.
+
+Parameters:
+    - file_name (str): The name of the CSV file containing the grades.
+Variables:
+    - data (numpy array): Contains the loaded grade data from the file.
+
+Logical Steps:
+    1. Attempt to load data using Numpy function.
+    2. Handle errors if the file is not found.
+    3. Display the loaded data.
+
+Returns: A numpy array containing the grade data, else none.
+
+2. Function Name: calculate_statistics
+Description: This function calculates and displays statistics for each exam and the overall grades.
+
+Parameters:
+    - data (numpy array): The grade data to analyze.
+    Variables:
+    - overall_grades (numpy array): Flattened array of all grades for overall statistics.
+
+Logical Steps:
+    1. Transpose the data to separate each exam.
+    2. Calculate mean, median, standard deviation, minimum, and maximum for each exam.
+    3. Flatten the data and calculate overall statistics.
+    4. Display the results.
+
+Returns: None.
+
+3. Function Name: calculate_pass_fail
+Description: This function calculates pass/fail statistics for each exam and the overall pass percentage.
+
+Parameters:
+    - data (numpy array): The grade data to analyze.
+
+Variables:
+    - total_passes (int): Total number of passing grades across all exams.
+    - total_grades (int): Total number of grades across all exams.
+
+Logical Steps:
+    1. Transpose the data to separate each exam.
+    2. Count the number of passes and fails for each exam.
+    3. Calculate the overall pass percentage.
+    4. Display the results.
+
+Returns: None.
+
+4. Function Name: main
+Description: This function orchestrates the execution of the program.
+
+Parameters: None
+
+Variables:
+    - file_name (str): The name of the CSV file containing the grades.
+
+Logical Steps:
+    1. Load the data from the specified CSV file using load_data.
+    2. If data is loaded, call calculate_statistics and calculate_pass_fail.
+
+Returns: None.
+
+Logical Steps:
+1. Call the load_data function to load grades from the CSV file.
+2. If data is loaded successfully, call calculate_statistics to display statistical data.
+3. Call calculate_pass_fail to display pass/fail statistics and overall pass percentage.
+
+Link to repository: https://github.com/BKhuong1515/COP2373.git

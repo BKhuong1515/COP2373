@@ -2,9 +2,8 @@
 # Date Created: 11/11/24
 # Assignment: Exercise 11A
 
-# Simulates a poker game where a user is dealt
-# a hand of five cards. The user can replace a selected card by entering their
-# number or press 'S' to stay and keep all cards.
+# Simulates a poker game where a user is dealt a hand of five cards.
+# The user can replace a selected card by entering their number or press 'S' to stay and keep all cards.
 
 import random
 import time
