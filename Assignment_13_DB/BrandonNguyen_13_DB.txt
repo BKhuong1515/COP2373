@@ -1,0 +1,93 @@
+Name: Brandon Nguyen
+Date Created: 11/20/24
+Assignment: Exercise 13_DB
+
+Program Description:
+Simulates population growth for various cities in Florida over 2% growth for a 20-year period.
+Also utilizes a SQLite database to store population data and
+matplotlib to generate population growth plots for user-selected cities.
+
+1. Function Name: create_population_db
+Description: This function initializes a SQLite database to store population data
+and populates it with initial population values for the year 2023.
+
+Parameters: None
+
+Variables:
+  - conn (SQLite connection object): Used to connect to the SQLite database.
+  - cursor (SQLite cursor object): Executes SQL queries on the database.
+  - initial_population (list of tuples): Contains initial population data for cities.
+
+Logical Steps:
+  1. Connect to the SQLite database specified by DB_NAME.
+  2. Create the population table if it does not already exist.
+  3. Populate the table with initial data for 2023 if not already present.
+  4. Commit changes and close the database connection.
+
+Returns: None
+
+2. Function Name: population_growth
+Description: Calculates and simulates the population growth for each city over 20 years
+and stores the data in the SQLite database.
+
+Parameters: None
+
+Variables:
+  - conn (SQLite connection object): Used to connect to the SQLite database.
+  - cursor (SQLite cursor object): Executes SQL queries on the database.
+  - data (list of tuples): Stores city names and their 2023 population.
+  - current_population (integer): Tracks the growing population of a city for each year.
+
+Logical Steps:
+  1. Retrieve all city names and their 2023 populations from the database.
+  2. For each city, calculate the population for the next 20 years using the growth rate.
+  3. Insert the calculated population for each year into the database.
+  4. Commit changes and close the database connection.
+
+Returns: None
+
+3. Function Name: plot_population_growth
+Description: Displays a list of cities for the user to choose from and generates a population growth graph for the selected city.
+
+Parameters: None
+
+Variables:
+  - conn (SQLite connection object): Used to connect to the SQLite database.
+  - cursor (SQLite cursor object): Executes SQL queries on the database.
+  - cities (list of strings): Stores the names of all cities in the database.
+  - choice (string): Stores the user’s selection.
+  - data (list of tuples): Stores the years and population data for the selected city.
+  - years (list of integers): Extracted years for plotting.
+  - populations (list of integers): Extracted population values for plotting.
+
+Logical Steps:
+  1. Retrieve the list of cities from the database.
+  2. Display the list of cities to the user and prompt them to select one.
+  3. Retrieve population data for the selected city from the database.
+  4. Extract years and population values from the data.
+  5. Generate and display a line plot of the population growth.
+  6. Close the database connection.
+
+Returns: None
+
+4. Function Name: main
+Description: Serves as the entry point for the program, calling all other functions in the correct order.
+
+Parameters: None
+
+Variables: None
+
+Logical Steps:
+  1. Call create_population_db to initialize the database.
+  2. Call population_growth to simulate and store population growth data.
+  3. Call plot_population_growth to provide a graphical representation of the data.
+
+Returns: None
+
+Logical Steps:
+1. Call create_population_db to initialize the database with initial data.
+2. Call population_growth to simulate and store population growth data.
+3. Call plot_population_growth to provide a graphical representation of the data.
+
+Link to repository: https://github.com/BKhuong1515/COP2373.git
+
